@@ -4,8 +4,10 @@
 - Nightmare中文 https://babycannotsay.github.io/Nightmare%E4%B8%AD%E6%96%87/#end
 - 参考页面 https://juejin.im/post/5dd3e3a7e51d453da86c11d9
 - cheerio https://github.com/cheeriojs/cheerio/wiki/Chinese-README
+- docker node 服务 https://www.runoob.com/docker/docker-install-node.html
+-  docker koa 服务 https://my.oschina.net/tearlight/blog/899157
 
 6.10 - 6.12
-- ⌛️进程守护
+- ⌛️进程守护  https://juejin.im/post/5be406705188256dbb5176f9
 - ⌛️node代码优化
 - mongo语法
