@@ -21,7 +21,6 @@ scheduleCronstyle()
 
 router.get('/', async (ctx, next) => {
   const bililists =  await ctx.db.collection('bililists').find().toArray()
-  console.log(bililists)
   ctx.body = bililists
   // ctx.router available
 });

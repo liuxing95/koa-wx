@@ -10,7 +10,6 @@ mongolass.connect('mongodb://119.45.136.117:27017/crawler', {
 const biliList = mongolass.model('biliList')
 
 const onUpdate = async (dataList) => {
-  console.log(dataList)
   return await biliList.insertMany(dataList)
 }
 
@@ -23,9 +22,7 @@ const  scheduleCronstyle = () =>{
 
 const pushData = async () => {
   const list = await getNightTop();
-  console.log(list)
   const result = await onUpdate(list)
-  console.log(result)
 }
 
 
