@@ -8,6 +8,9 @@
 -  docker koa 服务 https://my.oschina.net/tearlight/blog/899157
 
 6.10 - 6.12
-- ⌛️进程守护  https://juejin.im/post/5be406705188256dbb5176f9
+- ⌛️进程守护
+  - https://juejin.im/post/5be406705188256dbb5176f9
+  - https://juejin.im/post/5e1fa941e51d451c774dcc18
+  - Nodejs教程30（完结）：PM2入门 https://juejin.im/post/5cae14bf6fb9a0688144e911
 - ⌛️node代码优化
 - mongo语法

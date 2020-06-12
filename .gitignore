@@ -1,6 +1,7 @@
 dist/
 deploy_versions/
 .temp/
+logs/
 .rn_temp/
 node_modules/
 .DS_Store
