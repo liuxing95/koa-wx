@@ -1,11 +1,10 @@
 const Koa = require('koa');
-var Router = require('koa-router');
 const mongo = require('koa-mongo')
+const CraelerRouter = require('./router/crawler.js')
+const MailRouter = require('./router/mailer.js')
 
 
 const app = new Koa();
-var router = new Router();
-
 const { scheduleCronstyle } = require('./schedule')
 const mongoUrl = `mongodb://root:liuxing0724@119.45.136.117:27017/crawler?authSource=admin`
 
@@ -20,18 +19,10 @@ app.use(mongo({
 scheduleCronstyle(app)
 
 
-router.get('/', async (ctx, next) => {
-  try {
-    const bililists =  await ctx.db.collection('bililists').find().toArray()
-    ctx.body = bililists
-  } catch(err) {
-    ctx.body = err
-  }
-  // ctx.router available
-});
-
 
 app
-  .use(router.routes())
-  .use(router.allowedMethods());
+  .use(CraelerRouter.routes())
+  .use(CraelerRouter.allowedMethods())
+  .use(MailRouter.routes())
+  .use(MailRouter.allowedMethods());
 app.listen(3000);

@@ -13,10 +13,15 @@
   - https://juejin.im/post/5e1fa941e51d451c774dcc18
   - Nodejs教程30（完结）：PM2入门 https://juejin.im/post/5cae14bf6fb9a0688144e911
 6.12 
-- ✅部署脚本 https://zhuanlan.zhihu.com/p/76137392
+- ✅部署脚本
+  - https://zhuanlan.zhihu.com/p/76137392
 
 6.20
-- ✅nodemon https://juejin.im/post/5b5005f7f265da0f66401fe7
+- ✅nodemon
+  - https://juejin.im/post/5b5005f7f265da0f66401fe7
+- nodemailer
+  - https://juejin.im/post/5eab8c965188256d5f4ce4e2
+  - https://www.npmjs.com/package/nodemailer
 
 
 TODO:
@@ -24,4 +29,4 @@ TODO:
   - ab 压测工具 https://www.jianshu.com/p/43d04d8baaf7
 - ⌛️mongo语法
 - ⌛️前端监控
-  - docker-compose.yml
+  - ✅docker-compose.yml
