@@ -2,10 +2,12 @@ const schedule = require('node-schedule');
 const { getNightTop } = require('./hot');
 const Mongolass = require('mongolass')
 const mongolass = new Mongolass()
-mongolass.connect('mongodb://119.45.136.117:27017/crawler', {
+const mongoUrl = `mongodb://root:liuxing0724@119.45.136.117:27017/crawler?authSource=admin`
+
+mongolass.connect(mongoUrl, {
   useUnifiedTopology: true,
   useNewUrlParser: true
-})// const mongolass = new Mongolass('mongodb://localhost:27017/test')
+})
 
 const biliList = mongolass.model('biliList')
 
@@ -24,7 +26,6 @@ const pushData = async () => {
   const list = await getNightTop();
   const result = await onUpdate(list)
 }
-
 
 module.exports = {
   scheduleCronstyle

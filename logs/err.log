@@ -1,0 +1,12 @@
+2020-06-20 14:24 +08:00: 
+2020-06-20 14:24 +08:00:   MongoError: command find requires authentication
+      at Connection.<anonymous> (/Users/liuxing/Documents/Study/WeChat/koa-ws/node_modules/mongodb/lib/core/connection/pool.js:466:61)
+      at Connection.emit (events.js:315:20)
+      at processMessage (/Users/liuxing/Documents/Study/WeChat/koa-ws/node_modules/mongodb/lib/core/connection/connection.js:384:10)
+      at Socket.<anonymous> (/Users/liuxing/Documents/Study/WeChat/koa-ws/node_modules/mongodb/lib/core/connection/connection.js:553:15)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+2020-06-20 14:24 +08:00: 
