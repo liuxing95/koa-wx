@@ -2,7 +2,7 @@ const schedule = require('node-schedule');
 const { getNightTop } = require('./hot');
 const Mongolass = require('mongolass')
 const mongolass = new Mongolass()
-const mongoUrl = `mongodb://root:liuxing0724@119.45.136.117:27017/crawler?authSource=admin`
+const mongoUrl = `mongodb://${mongo.user}:${mongo.pass}@${mongo.ip}:27017/crawler?authSource=admin`
 
 mongolass.connect(mongoUrl, {
   useUnifiedTopology: true,
